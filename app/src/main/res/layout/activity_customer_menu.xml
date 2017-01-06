@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.bugix_zy.airlinereservation.CustomerMenuActivity">
+
+    <Button
+        android:text="Management"
+        android:layout_width="300dp"
+        android:id="@+id/manageButton"
+        android:textSize="30sp"
+        android:layout_height="80dp"
+        android:onClick="onClickedManagement"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/manageButton"
+        android:layout_alignStart="@+id/manageButton"
+        android:layout_marginTop="97dp"
+        android:textSize="30sp"
+        android:onClick="onClickedmenuBackButton" />
+
+    <Button
+        android:text="Booking"
+        android:id="@+id/bookButton"
+        android:textSize="30sp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:onClick="onClickedBookingButton"
+        android:layout_above="@+id/manageButton"
+        android:layout_alignStart="@+id/manageButton"
+        android:layout_marginBottom="83dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bookButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/welcometextView"
+        android:textSize="30sp" />
+</RelativeLayout>

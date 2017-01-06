@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employee_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.bugix_zy.airlinereservation.EmployeeMenuActivity">
+
+    <Button
+        android:text="Add Specific Button"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="147dp"
+        android:id="@+id/menuAddSpecButton"
+        android:layout_alignTop="@+id/menuAddRegButton"
+        android:layout_toEndOf="@+id/menuAddRegButton"
+        android:textSize="24sp"
+        android:onClick="onClickedMenuAddSpec" />
+
+    <Button
+        android:text="show all specific flights"
+        android:layout_width="300dp"
+        android:id="@+id/menuShowSpec"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/menuShowReg"
+        android:layout_alignStart="@+id/menuAddSpecButton"
+        android:layout_height="80dp"
+        android:onClick="onClickedShowAllSpec" />
+
+    <Button
+        android:text="Add Regular Flight"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/menuAddRegButton"
+        android:textSize="24sp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:onClick="onClickedMenuAddReg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="show all regular flights"
+        android:layout_width="300dp"
+        android:id="@+id/menuShowReg"
+        android:textSize="24sp"
+        android:layout_height="80dp"
+        android:onClick="onClickedShowAllReg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/menuDeleteRegButton"
+        android:layout_marginBottom="97dp" />
+
+    <Button
+        android:text="Delete Regular Flight"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/menuDeleteRegButton"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/menuAddRegButton"
+        android:onClick="onClickedDeleteReg" />
+
+    <Button
+        android:text="Delete Specific Flight"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/menuDeleteSpecButton"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/menuDeleteRegButton"
+        android:layout_alignStart="@+id/menuShowSpec"
+        android:onClick="onClickedDeleteSpec" />
+
+</RelativeLayout>

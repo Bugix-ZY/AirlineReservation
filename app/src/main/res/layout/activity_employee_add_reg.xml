@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employee_add_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.bugix_zy.airlinereservation.EmployeeAddRegActivity">
+
+    <Button
+        android:text="Add"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="355dp"
+        android:layout_marginBottom="67dp"
+        android:id="@+id/addRegButton"
+        android:onClick="onClickedAddReg"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Departure"
+        android:ems="10"
+        android:layout_below="@+id/RegFlightNo"
+        android:layout_alignStart="@+id/RegFlightNo"
+        android:layout_marginTop="53dp"
+        android:id="@+id/RegDeparture"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="FlightNo"
+        android:ems="10"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="133dp"
+        android:id="@+id/RegFlightNo"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/AddRegBack"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="140dp"
+        android:id="@+id/AddRegBack"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/addRegButton"
+        android:layout_alignBottom="@+id/addRegButton"
+        android:layout_toEndOf="@+id/addRegButton"
+        android:onClick="onClickedAddRegBack" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Arrival Time"
+        android:ems="10"
+        android:id="@+id/arrTimeEdit"
+        android:layout_alignBaseline="@+id/RegDeparture"
+        android:layout_alignBottom="@+id/RegDeparture"
+        android:layout_alignStart="@+id/depaTimeEdit"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignBottom="@+id/RegArrival"
+        android:layout_alignStart="@+id/arrTimeEdit"
+        android:id="@+id/RegPriceEdit"
+        android:text="Nomial Price"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Arrival"
+        android:ems="10"
+        android:layout_marginTop="48dp"
+        android:id="@+id/RegArrival"
+        android:layout_below="@+id/RegDeparture"
+        android:layout_alignStart="@+id/RegDeparture"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/depaTimeEdit"
+        android:text="Departure Time"
+        android:layout_alignBaseline="@+id/RegFlightNo"
+        android:layout_alignBottom="@+id/RegFlightNo"
+        android:layout_alignStart="@+id/AddRegBack"
+        android:textSize="24sp" />
+</RelativeLayout>

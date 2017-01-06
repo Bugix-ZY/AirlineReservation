@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.bugix_zy.airlinereservation.CustomerLoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/pswEdit"
+        android:layout_alignEnd="@+id/pswEdit"
+        android:layout_marginBottom="61dp"
+        android:id="@+id/accountEdit"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/accountEdit"
+        android:layout_toStartOf="@+id/accountEdit"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/account"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/pswEdit"
+        android:layout_alignBottom="@+id/pswEdit"
+        android:layout_alignStart="@+id/account" />
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/loginButton"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/signupButton"
+        android:textSize="30sp"
+        android:onClick="onClickedSignup" />
+
+    <Button
+        android:text="Log in"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/loginButton"
+        android:onClick="onClickedLoginButton"
+        android:textSize="30sp"
+        android:layout_above="@+id/signupButton"
+        android:layout_alignEnd="@+id/pswEdit"
+        android:layout_marginEnd="75dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pswEdit"
+        android:layout_marginBottom="43dp"
+        android:textSize="24sp"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="411dp" />
+
+</RelativeLayout>

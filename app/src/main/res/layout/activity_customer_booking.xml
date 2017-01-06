@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.bugix_zy.airlinereservation.CustomerBookingActivity">
+
+    <TextView
+        android:text="@string/please_fill_in_the_following_infomation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView2"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="@string/passenger_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textView6"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:text="@string/passenger_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:text="@string/passenger_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:layout_marginEnd="62dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:text="@string/emergency_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/textView10"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/EmerPhoneEditText"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignStart="@+id/textView3"
+        android:text="@string/emergency_phone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginStart="49dp"
+        android:id="@+id/PsgNameEditText"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_alignTop="@+id/EmerPhoneEditText"
+        android:layout_alignStart="@+id/EmerNameEditText"
+        android:id="@+id/emerPhoneInput"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/EmerNameEditText"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/psgPhoneEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/psgIDEditText"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/PsgNameEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/psgPhoneEditText"
+        android:lineSpacingExtra="24sp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/psgIDEditText"
+        android:layout_alignEnd="@+id/psgIDEditText" />
+
+    <Button
+        android:text="confirm"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="66dp"
+        android:id="@+id/ConfirmButton"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/cancelButton"
+        android:layout_alignStart="@+id/emerPhoneInput"
+        android:layout_alignTop="@+id/cancelButton"
+        android:onClick="onClickedConfirm" />
+
+    <Button
+        android:text="@android:string/cancel"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/cancelButton"
+        android:layout_marginEnd="13dp"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/PsgNameEditText"
+        android:onClick="onClickedCancel" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PsgNameEditText"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/TicketText"
+        android:textSize="18sp" />
+
+</RelativeLayout>
